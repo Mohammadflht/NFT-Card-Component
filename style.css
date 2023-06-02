@@ -32,12 +32,13 @@
     height: auto;
     border-radius: 8px;
 }
-.center-box p:nth-child(2) {
+.nft-name {
     color: hsl(0, 0%, 100%);
     padding: 16px 0;
     text-align: left;
     font-size: 17px;
     font-weight: 600;
+    width: 62%;
 }
 .center-box p:nth-child(3) {
     color: hsl(0, 0%, 100%);
@@ -87,7 +88,7 @@
     font-weight: 600;
     text-align: left;
 }
-.center-box p:last-child span {
+.avatar-detail span {
     color: hsl(0, 0%, 100%);
 }
 .center-box .box-footer {
@@ -101,10 +102,21 @@
     border-radius: 50%;
     margin-top: 20px;
 }
-.center-box .box-footer p {
+.avatar-detail {
     display: inline-block;
     position: absolute;
     top: 18%;
     left: 18%;
 }
 
+/*When Cars is Active*/
+.nft-name:hover {
+    color: hsl(178, 100%, 50%);
+    cursor: pointer;
+    transition: color 0.2s;
+}
+.box-footer span:hover {
+    color: hsl(178, 100%, 50%);
+    transition: color 0.2s;
+    cursor: pointer;
+}
