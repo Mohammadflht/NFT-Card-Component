@@ -3,7 +3,6 @@
     src: url(Font/Outfit-VariableFont_wght.ttf);
 }
 
-
 * {
     padding: 0;
     margin: 0;
@@ -26,6 +25,7 @@
     padding: 19px;
     text-align: center;
     border-radius: 16px;
+    box-shadow: 0 0 23px hsl(219, 38%, 31%);
 }
 .center-box img {
     width: 100%;
