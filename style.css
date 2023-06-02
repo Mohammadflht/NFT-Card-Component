@@ -32,6 +32,35 @@
     height: auto;
     border-radius: 8px;
 }
+.active {
+    width: 232px;
+    height: 232px;
+    position: relative;
+    border-radius: 8px;
+}
+.active::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 232px;
+    background-color: hsl(178, 100%, 50%);
+    display: none;
+    opacity: 40%;
+    border-radius: 8px;
+}
+.active img {
+    width: 100%;
+    height: 232px;
+    border-radius: 8px;
+}
+.active svg {
+    position: absolute;
+    top: 40%;
+    left: 40%;
+    display: none;
+}
 .nft-name {
     color: hsl(0, 0%, 100%);
     padding: 16px 0;
@@ -119,4 +148,14 @@
     color: hsl(178, 100%, 50%);
     transition: color 0.2s;
     cursor: pointer;
+}
+.active:hover::before {
+    display: block;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+.active:hover svg {
+    display: block;
+    cursor: pointer;
+    transition: all 0.2s;
 }
